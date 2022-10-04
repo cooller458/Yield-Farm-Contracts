@@ -1,0 +1,1888 @@
+{
+  "contractName": "IBalanceAllocator",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "aid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawAllocation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "aid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawAllocationTo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "syncAllocations",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "setSyncDelay",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "allocation",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "allocationAdmins",
+          "type": "address[]"
+        }
+      ],
+      "name": "addAllocation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "aid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "allocation",
+          "type": "uint256"
+        }
+      ],
+      "name": "setAllocation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "aid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "newAllocationAdmins",
+          "type": "address[]"
+        }
+      ],
+      "name": "addAdminsToAllocation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "aid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "allocationAdminsToRemove",
+          "type": "address[]"
+        }
+      ],
+      "name": "removeAdminsFromAllocation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "transferDevToOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "sweepToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"aid\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"newAllocationAdmins\",\"type\":\"address[]\"}],\"name\":\"addAdminsToAllocation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"allocation\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"allocationAdmins\",\"type\":\"address[]\"}],\"name\":\"addAllocation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"aid\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"allocationAdminsToRemove\",\"type\":\"address[]\"}],\"name\":\"removeAdminsFromAllocation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"aid\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"allocation\",\"type\":\"uint256\"}],\"name\":\"setAllocation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"setSyncDelay\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"sweepToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"syncAllocations\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"transferDevToOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"aid\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdrawAllocation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"aid\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"withdrawAllocationTo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"transferDevToOwner()\":{\"details\":\"Transfers the MasterApe dev address to the owner of this contract\"},\"withdrawAllocation(uint256,uint256)\":{\"details\":\"Events should emit the current price in USD of the BANANA withdrawn\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IBalanceAllocator.sol\":\"IBalanceAllocator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IBalanceAllocator.sol\":{\"keccak256\":\"0xd2042873dc42e89aa753e47abb28043712c4d8c651e774fd0c83b98bc438d23d\",\"urls\":[\"bzz-raw://7cb27ec2a366d1b2bf8a8711c4aae345e14476ef2b8cb8bfdfc60a5cf6cad8f3\",\"dweb:/ipfs/QmR247TmRdf7JoKmVxVxTk8Y8apvMnhFdz8b3xbiYjA2XD\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.6.12;\n\n/*\n * ApeSwapFinance \n * App:      https://apeswap.finance\n * Medium:   https://medium.com/@ape_swap    \n * Twitter:  https://twitter.com/ape_swap \n * Telegram: https://t.me/ape_swap\n * GitHub:   https://github.com/ApeSwapFinance\n */\n\n// Ownable\ninterface IBalanceAllocator {\n    /// @dev Events should emit the current price in USD of the BANANA withdrawn\n    function withdrawAllocation(uint256 aid, uint256 amount) external; // onlyAllocationAdmin or Owner\n    function withdrawAllocationTo(uint256 aid, uint256 amount, address to) external; // onlyAllocationAdmin or Owner\n    function syncAllocations() external; // only after delay?\n    function setSyncDelay() external; // onlyOwner\n    function addAllocation(string memory name, uint256 allocation, address[] memory allocationAdmins) external; // onlyOwner\n    function setAllocation(uint256 aid, uint256 allocation) external; // onlyOwner\n    function addAdminsToAllocation(uint256 aid, address[] memory newAllocationAdmins) external; // onlyOwner\n    function removeAdminsFromAllocation(uint256 aid, address[] memory allocationAdminsToRemove) external; // onlyOwner\n    /// @dev Transfers the MasterApe dev address to the owner of this contract\n    function transferDevToOwner() external; // onlyOwner\n    function sweepToken() external; //onlyOwner\n}",
+  "sourcePath": "C:\\Users\\OmrElibol\\OneDrive\\Masaüstü\\BalanceContractRevise\\contracts\\interfaces\\IBalanceAllocator.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IBalanceAllocator.sol",
+    "exportedSymbols": {
+      "IBalanceAllocator": [
+        10077
+      ]
+    },
+    "id": 10078,
+    "license": null,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10013,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:22"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 10077,
+        "linearizedBaseContracts": [
+          10077
+        ],
+        "name": "IBalanceAllocator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 10014,
+              "nodeType": "StructuredDocumentation",
+              "src": "305:76:22",
+              "text": "@dev Events should emit the current price in USD of the BANANA withdrawn"
+            },
+            "functionSelector": "badded16",
+            "id": 10021,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawAllocation",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10019,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10016,
+                  "mutability": "mutable",
+                  "name": "aid",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10021,
+                  "src": "414:11:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10015,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "414:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10018,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10021,
+                  "src": "427:14:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10017,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "427:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "413:29:22"
+            },
+            "returnParameters": {
+              "id": 10020,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "451:0:22"
+            },
+            "scope": 10077,
+            "src": "386:66:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "3f96662b",
+            "id": 10030,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawAllocationTo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10028,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10023,
+                  "mutability": "mutable",
+                  "name": "aid",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10030,
+                  "src": "519:11:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10022,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "519:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10025,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10030,
+                  "src": "532:14:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10024,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "532:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10027,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10030,
+                  "src": "548:10:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10026,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "548:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "518:41:22"
+            },
+            "returnParameters": {
+              "id": 10029,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "568:0:22"
+            },
+            "scope": 10077,
+            "src": "489:80:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "08a81ab9",
+            "id": 10033,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "syncAllocations",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10031,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "630:2:22"
+            },
+            "returnParameters": {
+              "id": 10032,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "641:0:22"
+            },
+            "scope": 10077,
+            "src": "606:36:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "a2cd798f",
+            "id": 10036,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setSyncDelay",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10034,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "689:2:22"
+            },
+            "returnParameters": {
+              "id": 10035,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "700:0:22"
+            },
+            "scope": 10077,
+            "src": "668:33:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "0151ad66",
+            "id": 10046,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addAllocation",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10044,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10038,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10046,
+                  "src": "742:18:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 10037,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "742:6:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10040,
+                  "mutability": "mutable",
+                  "name": "allocation",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10046,
+                  "src": "762:18:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10039,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "762:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10043,
+                  "mutability": "mutable",
+                  "name": "allocationAdmins",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10046,
+                  "src": "782:33:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 10041,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "782:7:22",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 10042,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "782:9:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "741:75:22"
+            },
+            "returnParameters": {
+              "id": 10045,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "825:0:22"
+            },
+            "scope": 10077,
+            "src": "719:107:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "4441af98",
+            "id": 10053,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setAllocation",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10051,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10048,
+                  "mutability": "mutable",
+                  "name": "aid",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10053,
+                  "src": "867:11:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10047,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "867:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10050,
+                  "mutability": "mutable",
+                  "name": "allocation",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10053,
+                  "src": "880:18:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10049,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "880:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "866:33:22"
+            },
+            "returnParameters": {
+              "id": 10052,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "908:0:22"
+            },
+            "scope": 10077,
+            "src": "844:65:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "0cd971d3",
+            "id": 10061,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addAdminsToAllocation",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10059,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10055,
+                  "mutability": "mutable",
+                  "name": "aid",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10061,
+                  "src": "958:11:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10054,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "958:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10058,
+                  "mutability": "mutable",
+                  "name": "newAllocationAdmins",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10061,
+                  "src": "971:36:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 10056,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "971:7:22",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 10057,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "971:9:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "957:51:22"
+            },
+            "returnParameters": {
+              "id": 10060,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1017:0:22"
+            },
+            "scope": 10077,
+            "src": "927:91:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "a7ccff28",
+            "id": 10069,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeAdminsFromAllocation",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10067,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10063,
+                  "mutability": "mutable",
+                  "name": "aid",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10069,
+                  "src": "1072:11:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10062,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1072:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10066,
+                  "mutability": "mutable",
+                  "name": "allocationAdminsToRemove",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 10069,
+                  "src": "1085:41:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 10064,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1085:7:22",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 10065,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1085:9:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1071:56:22"
+            },
+            "returnParameters": {
+              "id": 10068,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1136:0:22"
+            },
+            "scope": 10077,
+            "src": "1036:101:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 10070,
+              "nodeType": "StructuredDocumentation",
+              "src": "1155:74:22",
+              "text": "@dev Transfers the MasterApe dev address to the owner of this contract"
+            },
+            "functionSelector": "fa75fb6f",
+            "id": 10073,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferDevToOwner",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10071,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1261:2:22"
+            },
+            "returnParameters": {
+              "id": 10072,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1272:0:22"
+            },
+            "scope": 10077,
+            "src": "1234:39:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "532cce18",
+            "id": 10076,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sweepToken",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 10074,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1310:2:22"
+            },
+            "returnParameters": {
+              "id": 10075,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1321:0:22"
+            },
+            "scope": 10077,
+            "src": "1291:31:22",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10078,
+        "src": "271:1065:22"
+      }
+    ],
+    "src": "0:1336:22"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/interfaces/IBalanceAllocator.sol",
+      "exportedSymbols": {
+        "IBalanceAllocator": [
+          10077
+        ]
+      },
+      "license": null
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 10013,
+        "name": "PragmaDirective",
+        "src": "0:23:22"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            10077
+          ],
+          "name": "IBalanceAllocator",
+          "scope": 10078
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "badded16",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdrawAllocation",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@dev Events should emit the current price in USD of the BANANA withdrawn"
+                },
+                "id": 10014,
+                "name": "StructuredDocumentation",
+                "src": "305:76:22"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "aid",
+                      "overrides": null,
+                      "scope": 10021,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10015,
+                        "name": "ElementaryTypeName",
+                        "src": "414:7:22"
+                      }
+                    ],
+                    "id": 10016,
+                    "name": "VariableDeclaration",
+                    "src": "414:11:22"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 10021,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10017,
+                        "name": "ElementaryTypeName",
+                        "src": "427:7:22"
+                      }
+                    ],
+                    "id": 10018,
+                    "name": "VariableDeclaration",
+                    "src": "427:14:22"
+                  }
+                ],
+                "id": 10019,
+                "name": "ParameterList",
+                "src": "413:29:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10020,
+                "name": "ParameterList",
+                "src": "451:0:22"
+              }
+            ],
+            "id": 10021,
+            "name": "FunctionDefinition",
+            "src": "386:66:22"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "3f96662b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdrawAllocationTo",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "aid",
+                      "overrides": null,
+                      "scope": 10030,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10022,
+                        "name": "ElementaryTypeName",
+                        "src": "519:7:22"
+                      }
+                    ],
+                    "id": 10023,
+                    "name": "VariableDeclaration",
+                    "src": "519:11:22"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 10030,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10024,
+                        "name": "ElementaryTypeName",
+                        "src": "532:7:22"
+                      }
+                    ],
+                    "id": 10025,
+                    "name": "VariableDeclaration",
+                    "src": "532:14:22"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "to",
+                      "overrides": null,
+                      "scope": 10030,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 10026,
+                        "name": "ElementaryTypeName",
+                        "src": "548:7:22"
+                      }
+                    ],
+                    "id": 10027,
+                    "name": "VariableDeclaration",
+                    "src": "548:10:22"
+                  }
+                ],
+                "id": 10028,
+                "name": "ParameterList",
+                "src": "518:41:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10029,
+                "name": "ParameterList",
+                "src": "568:0:22"
+              }
+            ],
+            "id": 10030,
+            "name": "FunctionDefinition",
+            "src": "489:80:22"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "08a81ab9",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "syncAllocations",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10031,
+                "name": "ParameterList",
+                "src": "630:2:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10032,
+                "name": "ParameterList",
+                "src": "641:0:22"
+              }
+            ],
+            "id": 10033,
+            "name": "FunctionDefinition",
+            "src": "606:36:22"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "a2cd798f",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setSyncDelay",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10034,
+                "name": "ParameterList",
+                "src": "689:2:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10035,
+                "name": "ParameterList",
+                "src": "700:0:22"
+              }
+            ],
+            "id": 10036,
+            "name": "FunctionDefinition",
+            "src": "668:33:22"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "0151ad66",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addAllocation",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "name",
+                      "overrides": null,
+                      "scope": 10046,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 10037,
+                        "name": "ElementaryTypeName",
+                        "src": "742:6:22"
+                      }
+                    ],
+                    "id": 10038,
+                    "name": "VariableDeclaration",
+                    "src": "742:18:22"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "allocation",
+                      "overrides": null,
+                      "scope": 10046,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10039,
+                        "name": "ElementaryTypeName",
+                        "src": "762:7:22"
+                      }
+                    ],
+                    "id": 10040,
+                    "name": "VariableDeclaration",
+                    "src": "762:18:22"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "allocationAdmins",
+                      "overrides": null,
+                      "scope": 10046,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "address[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "address[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "address",
+                              "stateMutability": "nonpayable",
+                              "type": "address"
+                            },
+                            "id": 10041,
+                            "name": "ElementaryTypeName",
+                            "src": "782:7:22"
+                          }
+                        ],
+                        "id": 10042,
+                        "name": "ArrayTypeName",
+                        "src": "782:9:22"
+                      }
+                    ],
+                    "id": 10043,
+                    "name": "VariableDeclaration",
+                    "src": "782:33:22"
+                  }
+                ],
+                "id": 10044,
+                "name": "ParameterList",
+                "src": "741:75:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10045,
+                "name": "ParameterList",
+                "src": "825:0:22"
+              }
+            ],
+            "id": 10046,
+            "name": "FunctionDefinition",
+            "src": "719:107:22"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "4441af98",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setAllocation",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "aid",
+                      "overrides": null,
+                      "scope": 10053,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10047,
+                        "name": "ElementaryTypeName",
+                        "src": "867:7:22"
+                      }
+                    ],
+                    "id": 10048,
+                    "name": "VariableDeclaration",
+                    "src": "867:11:22"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "allocation",
+                      "overrides": null,
+                      "scope": 10053,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10049,
+                        "name": "ElementaryTypeName",
+                        "src": "880:7:22"
+                      }
+                    ],
+                    "id": 10050,
+                    "name": "VariableDeclaration",
+                    "src": "880:18:22"
+                  }
+                ],
+                "id": 10051,
+                "name": "ParameterList",
+                "src": "866:33:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10052,
+                "name": "ParameterList",
+                "src": "908:0:22"
+              }
+            ],
+            "id": 10053,
+            "name": "FunctionDefinition",
+            "src": "844:65:22"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "0cd971d3",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addAdminsToAllocation",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "aid",
+                      "overrides": null,
+                      "scope": 10061,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10054,
+                        "name": "ElementaryTypeName",
+                        "src": "958:7:22"
+                      }
+                    ],
+                    "id": 10055,
+                    "name": "VariableDeclaration",
+                    "src": "958:11:22"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newAllocationAdmins",
+                      "overrides": null,
+                      "scope": 10061,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "address[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "address[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "address",
+                              "stateMutability": "nonpayable",
+                              "type": "address"
+                            },
+                            "id": 10056,
+                            "name": "ElementaryTypeName",
+                            "src": "971:7:22"
+                          }
+                        ],
+                        "id": 10057,
+                        "name": "ArrayTypeName",
+                        "src": "971:9:22"
+                      }
+                    ],
+                    "id": 10058,
+                    "name": "VariableDeclaration",
+                    "src": "971:36:22"
+                  }
+                ],
+                "id": 10059,
+                "name": "ParameterList",
+                "src": "957:51:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10060,
+                "name": "ParameterList",
+                "src": "1017:0:22"
+              }
+            ],
+            "id": 10061,
+            "name": "FunctionDefinition",
+            "src": "927:91:22"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "a7ccff28",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "removeAdminsFromAllocation",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "aid",
+                      "overrides": null,
+                      "scope": 10069,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10062,
+                        "name": "ElementaryTypeName",
+                        "src": "1072:7:22"
+                      }
+                    ],
+                    "id": 10063,
+                    "name": "VariableDeclaration",
+                    "src": "1072:11:22"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "allocationAdminsToRemove",
+                      "overrides": null,
+                      "scope": 10069,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "address[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "address[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "address",
+                              "stateMutability": "nonpayable",
+                              "type": "address"
+                            },
+                            "id": 10064,
+                            "name": "ElementaryTypeName",
+                            "src": "1085:7:22"
+                          }
+                        ],
+                        "id": 10065,
+                        "name": "ArrayTypeName",
+                        "src": "1085:9:22"
+                      }
+                    ],
+                    "id": 10066,
+                    "name": "VariableDeclaration",
+                    "src": "1085:41:22"
+                  }
+                ],
+                "id": 10067,
+                "name": "ParameterList",
+                "src": "1071:56:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10068,
+                "name": "ParameterList",
+                "src": "1136:0:22"
+              }
+            ],
+            "id": 10069,
+            "name": "FunctionDefinition",
+            "src": "1036:101:22"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "fa75fb6f",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "transferDevToOwner",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@dev Transfers the MasterApe dev address to the owner of this contract"
+                },
+                "id": 10070,
+                "name": "StructuredDocumentation",
+                "src": "1155:74:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10071,
+                "name": "ParameterList",
+                "src": "1261:2:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10072,
+                "name": "ParameterList",
+                "src": "1272:0:22"
+              }
+            ],
+            "id": 10073,
+            "name": "FunctionDefinition",
+            "src": "1234:39:22"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "532cce18",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "sweepToken",
+              "overrides": null,
+              "scope": 10077,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10074,
+                "name": "ParameterList",
+                "src": "1310:2:22"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10075,
+                "name": "ParameterList",
+                "src": "1321:0:22"
+              }
+            ],
+            "id": 10076,
+            "name": "FunctionDefinition",
+            "src": "1291:31:22"
+          }
+        ],
+        "id": 10077,
+        "name": "ContractDefinition",
+        "src": "271:1065:22"
+      }
+    ],
+    "id": 10078,
+    "name": "SourceUnit",
+    "src": "0:1336:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-10-03T08:13:27.312Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "transferDevToOwner()": {
+        "details": "Transfers the MasterApe dev address to the owner of this contract"
+      },
+      "withdrawAllocation(uint256,uint256)": {
+        "details": "Events should emit the current price in USD of the BANANA withdrawn"
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
